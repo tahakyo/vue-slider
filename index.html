@@ -17,6 +17,10 @@
             <div class="items" >
                 <div class="item active" >
                     <img :src="countries[currentSlide].image" :alt="countries[currentSlide].title">
+                    <div class="text">
+                        <h3>{{countries[currentSlide].title}}</h3>
+                        <p>{{countries[currentSlide].text}}</p>
+                    </div>
                 </div>
                 <!--
                 <div class="item active">
