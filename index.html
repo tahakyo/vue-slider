@@ -15,8 +15,8 @@
     <div id="root">
         <div class="container">
             <div class="items" >
-                <div class="item active" v-for="(element, index) in countries">
-                    <img :src="element.image" :alt="element.title">
+                <div class="item active" >
+                    <img :src="countries[currentSlide].image" :alt="countries[currentSlide].title">
                 </div>
                 <!--
                 <div class="item active">
