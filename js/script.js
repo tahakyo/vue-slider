@@ -33,7 +33,20 @@ const app = new Vue (
 
         },
         methods : {
-
+            pervSlide(){
+                if (this.currentSlide == 0) {
+                    this.currentSlide = this.countries.length - 1;
+                } else {
+                    this.currentSlide--;
+                }
+            },
+            nextSlide(){
+                if (this.currentSlide == this.countries.length - 1) {
+                    this.currentSlide = 0;
+                } else {
+                    this.currentSlide++;
+                }
+            }
         }
     }
 
