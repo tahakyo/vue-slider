@@ -33,7 +33,7 @@ const app = new Vue (
 
         },
         methods : {
-            pervSlide(){
+            prevSlide(){
                 if (this.currentSlide == 0) {
                     this.currentSlide = this.countries.length - 1;
                 } else {
